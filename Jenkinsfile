@@ -7,7 +7,7 @@ pipeline {
                      def server = Artifactory.server 'JFROG1'
                      def uploadSpec= """{
                         "files": [{
-                           "pattern": "/Volumes/E/WORK/code/app-devops-jenkins/target/app-devops-*.jar",
+                           "pattern": "/Volumes/E/WORK/code/app-devops-jenkins/target/app-devops-jenkins.jar",
                            "target": "default-docker-virtual/"
                         }]
                      }"""
@@ -23,7 +23,7 @@ pipeline {
                     def server = Artifactory.server 'JFROG1'       
                     def downSpec= """{
                             "files": [{
-                               "pattern": "default-docker-local/app-devops*.jar",
+                               "pattern": "default-docker-local/app-devops-jenkins.jar",
                                "target":"/tmp/"
                             }]
                          }"""
