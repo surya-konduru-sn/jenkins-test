@@ -34,6 +34,12 @@ pipeline {
                 }}
             }
         
+         stage('Change') {
+            steps {
+                  snDevOpsChange();
+                }
+            }
+        
         
         
     }
