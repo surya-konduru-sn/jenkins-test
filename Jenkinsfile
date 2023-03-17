@@ -20,7 +20,7 @@ pipeline {
         stage('Download') {
             steps {
                 script { 
-                    sleep(150000);
+                    sleep(15000);
                     def server = Artifactory.server 'JFROG1'       
                     def downSpec= """{
                             "files": [{
