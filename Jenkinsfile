@@ -19,6 +19,16 @@ stages {
                    snDevOpsChange()
               }
         }
+
+        stage('Post-Change-Step') {
+             when {
+               branch 'main'                  
+             }
+             steps {
+                     echo 'Post-Change-Step Step '
+             }
+         }
+     
 }
    
 }
