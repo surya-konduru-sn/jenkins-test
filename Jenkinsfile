@@ -14,7 +14,7 @@ stages {
         stage('Change-Step') {
               steps {
                    echo 'Change Step'
-                   snDevOpsChange changeRequestDetails: '{ "autoCloseChange": false }'
+                   snDevOpsChange changeRequestDetails: '{ "autoCloseChange": true }'
               }
         }
 }
