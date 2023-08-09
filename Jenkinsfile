@@ -15,7 +15,7 @@ stages {
               steps {
                    echo 'Change Step'
                    //snDevOpsChange changeRequestDetails: '{attributes:{"close_notes":"Testing sample close notes"} }'
-                   snDevOpsChange changeRequestDetails: '{ "autoCloseChange": "true", attributes:{"close_notes":"Testing sample close notes"} }'
+                   snDevOpsChange changeRequestDetails: '{ "autoCloseChange": "false", attributes:{"close_notes":"Testing sample close notes"} }'
                   // snDevOpsChange()
               }
         }
