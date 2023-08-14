@@ -22,3 +22,4 @@ stages {
 }
                    //snDevOpsChange changeRequestDetails: '{attributes:{"close_notes":"Testing sample close notes"} }'
                    // snDevOpsChange changeRequestDetails: '{ "autoCloseChange": false, attributes:{"close_notes":"Testing sample close notes"} }'
+// snDevOpsChange changeRequestDetails: '{ "autoCloseChange": false, "setCloseCode":true, attributes:{"close_notes":"Testing sample close notes"} }'
